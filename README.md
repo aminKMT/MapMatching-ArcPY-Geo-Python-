@@ -12,6 +12,7 @@ In this repository, we demonstrate the map-matching of GPS points from five cycl
 ![Off-Road GPS Point](Images/Matched.jpg)
 
 Our Python scripts are designed to accept a GPS point shapefile (depicted on the left side of the image) and the street network as inputs. The output will be five matched tracks (shown on the right side of the image). Sample bike GPS points feature class (Bike_GP_Point.shp) and the Pittsburgh street network (PittsburghStreets_ND) can be found in the Data folder of the repository.
+
 ![Input to Results](Images/Final.jpg)
 
 The Bike_GP_Point attribute table provides information for each bike GPS point. The Trip_ID field serves as a unique identifier for each set of GPS points, representing individual bike tracks. The START_AT field shows the timestamp of each recorded GPS point. By sorting the GPS points in ascending order based on START_AT, we can ascertain the direction of each bike trip. PittsburghStreets_ND is a network dataset, based on TIGER, which is available in the data folder.## Python Scripts
